@@ -5,7 +5,7 @@ node {
 		checkout scm
 	}
 	stage('Build image') {
-		app = docker.build('horizondave/example-app')
+		app = docker.build('horizonspdave/example-app')
 	}
 	stage('Push image') {
 		docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials') {
